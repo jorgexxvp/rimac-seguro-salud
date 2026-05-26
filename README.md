@@ -1,16 +1,6 @@
-# Sistema de Reservas Web Reservas 🎫
+# RIMAC SEGURO SALUD
 
-Aplicación web moderna para gestión de reservas, reserva de servicios y administración de usuarios. Construida con **React**, **TypeScript**, **Tailwind CSS** y **Vite**, siguiendo los principios de **Clean Architecture**.
-
-## 🚀 Características
-
-- ✅ Autenticación y gestión de usuarios
-- ✅ Reserva de servicios y maestros
-- ✅ Dashboard administrativo
-- ✅ Gestión de permisos y roles
-- ✅ Interfaz moderna y responsiva
-- ✅ State management con Zustand
-- ✅ API REST con proxy CORS
+ Construida con **React**, **TypeScript**, **SASS** y **Vite**, siguiendo los principios de **Clean Architecture**.
 
 ## 📋 Requisitos Previos
 
@@ -25,7 +15,7 @@ Aplicación web moderna para gestión de reservas, reserva de servicios y admini
 | **React** | 18+ | UI Framework |
 | **TypeScript** | 5+ | Type Safety |
 | **Vite** | 5+ | Build Tool |
-| **Tailwind CSS** | 3+ | Styling |
+| **SASS** | 3+ | Styling |
 | **Zustand** | Latest | State Management |
 | **pnpm** | 8+ | Package Manager |
 
