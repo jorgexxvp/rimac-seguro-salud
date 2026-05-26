@@ -1,73 +1,86 @@
-# React + TypeScript + Vite
+# Sistema de Reservas Web Reservas 🎫
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplicación web moderna para gestión de reservas, reserva de servicios y administración de usuarios. Construida con **React**, **TypeScript**, **Tailwind CSS** y **Vite**, siguiendo los principios de **Clean Architecture**.
 
-Currently, two official plugins are available:
+## 🚀 Características
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- ✅ Autenticación y gestión de usuarios
+- ✅ Reserva de servicios y maestros
+- ✅ Dashboard administrativo
+- ✅ Gestión de permisos y roles
+- ✅ Interfaz moderna y responsiva
+- ✅ State management con Zustand
+- ✅ API REST con proxy CORS
 
-## React Compiler
+## 📋 Requisitos Previos
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Node.js** 20+ 
+- **pnpm** 8+ ([Instalar pnpm](https://pnpm.io/installation))
+- **Git**
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+| Tecnología | Versión | Propósito |
+|-----------|---------|----------|
+| **React** | 18+ | UI Framework |
+| **TypeScript** | 5+ | Type Safety |
+| **Vite** | 5+ | Build Tool |
+| **Tailwind CSS** | 3+ | Styling |
+| **Zustand** | Latest | State Management |
+| **pnpm** | 8+ | Package Manager |
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## 📁 Estructura del Proyecto
 ```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+src/
+├── core/                          # Lógica de negocio central
+│   ├── application/               # Use Cases y servicios
+│   │   ├── PlanUseCase.ts
+│   │   └── UserUseCase.ts
+│   ├── domain/                    # Entidades e interfaces
+│   │   ├── models/                # Modelos de datos
+│   │   │   ├── Plan.ts
+│   │   │   └── User.ts
+│   │   └── repositories/          # Interfaces de repositorios
+│   │       ├── PlanRepository.ts
+│   │       └── UserRepository.ts
+│   └── infrastructure/            # Implementaciones de APIs
+│       ├── api/
+│       │   └── Api.ts             
+│       └── services/              # Servicios de API
+│           ├── PlanApi.ts         # Configuración HTTP cliente
+│           └── UserApi.ts
+├── presentation/                  # Capa de presentación (UI)
+│   ├── assets/
+│   │   ├── images/
+│   │   └── svg/
+│   ├── components/                # Componentes reutilizables
+│   │   ├── CustomButton/
+│   │   ├── GroupInput/
+│   │   ├── Header/
+│   │   ├── Loading/
+│   │   ├── Slider/
+│   │   ├── Stepper/
+│   ├── Views/                  # Módulos por feature
+│   │   └── Login/
+│   │   │   ├── Login/
+│   │   │   └── index.ts
+│   │   └── Portal/
+│   │       ├── Portal/
+│   │       └── index.ts
+│   │   └── Summary/
+│   │       ├── Summary/
+│   │       └── index.ts
+│   ├── zustand/                   # Global State Management
+│   │   ├── userInfoState.tsx
+│   ├── toolbox/                   # Utilidades y constantes
+│   │   ├── constants/
+│   │   ├── interface/
+│   │   ├── utils/
+│   │   └── index.ts
+│   ├── routes/                    # Configuración de rutas
+│   └── App.tsx
+├── index.ts                       # Entry point
+├── vite.config.ts                 # Configuración de Vite
+├── tailwind.config.ts             # Configuración de Tailwind
+└── tsconfig.json                  # Configuración de TypeScript
 ```

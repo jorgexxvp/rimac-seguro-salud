@@ -4,7 +4,7 @@ import styles from "./CustomButton.module.sass";
 
 interface ICustomButtonProps {
   handleSubmit: () => void;
-  variant?: "red" | "black";
+  variant?: "red" | "black" | "default";
   text: string;
   disabled?: boolean;
 }

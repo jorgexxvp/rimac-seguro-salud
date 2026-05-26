@@ -17,11 +17,11 @@ export const CustomCheckBox: FC<ICustomCheckBoxProps> = ({
 }) => {
   return (
     <div
-      className={`${styles[`checkbox_${variant}`]} ${checked && styles[`checkbox_${variant}_selected`]}`}
+      className={`${styles[`checkbox_${variant}`]} ${checked ? styles[`checkbox_${variant}_selected`] : ""}`}
       onClick={onChange}
     >
       <CheckIcon
-        className={`${styles[`checkbox_${variant}_icon`]} ${checked && styles[`checkbox_${variant}_selected_icon`]}`}
+        className={`${styles[`checkbox_${variant}_icon`]} ${checked ? styles[`checkbox_${variant}_selected_icon`] : ""}`}
       />
     </div>
   );
