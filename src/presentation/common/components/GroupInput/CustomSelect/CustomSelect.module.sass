@@ -1,9 +1,9 @@
-@import '../../../../toolbox/styles/_theme'
+@use '../../../../toolbox/styles/_theme'
 
 .select
     width: 100%
     padding: 15.92px 16.11px
-    border: 1.007px solid $color-gray-dark
+    border: 1.007px solid theme.$color-gray-dark
     border-radius: 4px
     position: relative
     cursor: pointer
@@ -16,16 +16,16 @@
         top: 100%
         width: 100%
         transition: all 100ms ease-in-out
-        background-color: $color-white
-        z-index: $zIndex-10
+        background-color: theme.$color-white
+        z-index: theme.$zIndex-10
         overflow: hidden
         position: absolute
         height: 0px
         left: 0
         &_option
             cursor: pointer
-            color: $color-primary
-            font-family: $font-primary
+            color: theme.$color-primary
+            font-family: theme.$font-primary
             font-feature-settings: 'clig' off, 'liga' off
             font-size: 16px
             font-style: normal
@@ -44,8 +44,8 @@
         gap: 8.06px
         justify-content: space-between
         &_text
-            color: $color-primary
-            font-family: $font-primary
+            color: theme.$color-primary
+            font-family: theme.$font-primary
             font-feature-settings: 'clig' off, 'liga' off
             font-size: 16px
             font-style: normal
@@ -54,16 +54,16 @@
             letter-spacing: 0.2px
     &_overlay_open
         height: fit-content
-        border: 1.007px solid $color-gray-dark
+        border: 1.007px solid theme.$color-gray-dark
     &_icon
-        width: 16px
-        height: 16px
+        width: 20px
+        height: 20px
 
     &_background
         position: absolute
         top: 0
         width: 100vw
-        z-index: $zIndex-3
+        z-index: theme.$zIndex-3
         background-color: rgba(0, 0, 0, 0.5)
         height: 100%
         left: 0

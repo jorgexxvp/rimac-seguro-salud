@@ -1,0 +1,81 @@
+@use '../../../../toolbox/styles/_theme'
+
+.header_stepper
+    position: absolute
+    left: 0
+    width: 100%
+    &_desktop
+        display: none
+        @media screen and (min-width: theme.$breakpoint-sm)
+            display: flex
+            background-color: theme.$color-purple-light
+            display: flex
+            gap: 64px
+            padding: 16px
+            justify-content: center
+            align-items: center
+            &_step
+                display: flex
+                align-items: center
+                gap: 16px
+                &:first-child
+                    position: relative
+                &:first-child::after
+                    content: ''
+                    position: absolute
+                    width: 24px
+                    border: 1px dashed theme.$color-secondary
+                    height: 0px
+                    left: 100%
+                    margin-left: 16px
+                &_number
+                    width: 24px
+                    height: 24px
+                    display: flex
+                    border: 1px solid theme.$color-gray-purple
+                    border-radius: 50%
+                    align-items: center
+                    justify-content: center
+                    transition-property: color, background-color, border
+                    transition-duration: 1s
+                    transition-timing-function: ease-in-out
+                    p
+                        color: theme.$color-gray-purple
+                        text-align: center
+                        font-feature-settings: 'clig' off, 'liga' off
+                        font-family: theme.$font-primary
+                        font-size: 12px
+                        font-style: normal
+                        font-weight: 700
+                        line-height: 16px
+                        letter-spacing: 0.6px
+                        text-transform: uppercase
+                &_item
+                    transition: color 1s ease-in-out
+                    p
+                        color: theme.$color-gray-purple
+                        font-feature-settings: 'clig' off, 'liga' off
+                        font-family: theme.$font-primary
+                        font-size: 16px
+                        font-style: normal
+                        font-weight: 400
+                        line-height: 24px
+                        letter-spacing: 0.2px
+        &_step_active
+            .header_stepper_desktop_step_number
+                border: 1px solid transparent
+                background-color: theme.$color-secondary
+                transition-property: color, background-color, border
+                transition-duration: 3s
+                transition-timing-function: ease-in-out
+                p
+                    color: theme.$color-white
+            .header_stepper_desktop_step_item
+                transition: color 3s ease-in-out
+                p
+                    color: theme.$color-primary
+
+    &_mobile
+        display: block
+        @media screen and (min-width: theme.$breakpoint-sm)
+            display: none

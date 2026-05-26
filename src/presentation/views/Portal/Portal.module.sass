@@ -1,0 +1,113 @@
+@use '../../toolbox/styles/_theme'
+
+.portal_loading
+    display: grid
+    grid-column-start: 1
+    grid-column-end: 5
+    height: 100%
+    align-items: center
+    justify-content: center
+    @media screen and (min-width: theme.$breakpoint-sm)
+        grid-column-start: 1
+        grid-column-end: 13
+
+.portal
+    display: flex
+    flex-direction: column
+    align-items: center
+    gap: 40px
+    width: 100%
+    &_head
+        display: flex
+        flex-direction: column
+        align-items: center
+        gap: 32px
+        width: 100%
+        &_title
+            display: flex
+            flex-direction: column
+            gap: 8px
+            max-width: clamp(336px, 98.29px + 59.43vw, 544px)
+            p
+                font-family: theme.$font-primary
+                color: theme.$color-purple-black
+                font-size: 16px
+                font-weight: 400
+                line-height: 28px
+                letter-spacing: 0.1px
+                @media screen and (min-width: theme.$breakpoint-sm)
+                    text-align: center
+                    font-family: theme.$font-primary
+            
+            
+            h1
+                font-family: theme.$font-primary
+                color: theme.$color-purple-black
+                font-size: clamp(1.75rem, 1.5192rem + 1.1538vw, 2.5rem)
+                font-weight: 700
+                line-height: clamp(2.25rem, 2.0192rem + 1.1538vw, 3rem)
+                letter-spacing: -0.6px
+                @media screen and (min-width: theme.$breakpoint-sm)
+                    text-align: center
+                
+        &_options
+            display: flex
+            flex-direction: row
+            flex-wrap: wrap
+            max-width: 336px
+            gap: 24px
+            width: 100%
+            @media screen and (min-width: theme.$breakpoint-sm)
+                display: grid
+                align-items: center
+                grid-template-columns: repeat(2,1fr)
+                max-width: 544px
+                gap: 32px
+    &_body
+        display: none
+        justify-content: center
+        grid-template-columns: repeat(auto-fit, minmax(0,288px))
+        gap: clamp(1.5rem, 1.3462rem + 0.7692vw, 2rem)
+        width: 100%
+        @media screen and (min-width: theme.$breakpoint-sm)
+            display: grid
+
+    &_body_mobile
+        display: grid
+        justify-content: center
+        @media screen and (min-width: theme.$breakpoint-sm)
+            display: none
+
+    @media screen and (min-width: theme.$breakpoint-sm)
+        gap: 20px
+
+.card
+    display: flex
+    flex-direction: column
+    align-items: flex-end
+    &_checkbox
+        width: 24px
+        height: 24px
+    &_content
+        display: flex
+        flex-direction: column
+        gap: 8px
+        svg
+            width: clamp(2rem, 1.6923rem + 1.5385vw, 3rem)
+            height: clamp(2rem, 1.6923rem + 1.5385vw, 3rem)
+        h3
+            color: theme.$color-text
+            font-family: theme.$font-primary
+            font-size: 20px
+            font-weight: 900
+            line-height: 28px
+            letter-spacing: -0.2px
+            text-align: left
+        p
+            color: theme.$color-text
+            font-family: theme.$font-primary
+            font-size: 12px
+            font-weight: 400
+            line-height: 20px
+            letter-spacing: 0.2px
+            text-align: left

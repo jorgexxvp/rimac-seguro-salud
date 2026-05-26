@@ -1,0 +1,94 @@
+@use '../../../../toolbox/styles/_theme'
+
+.card_plans
+    display: flex
+    flex-direction: column
+    gap: 24px
+    width: 100%
+    height: 570px
+    &_head
+        display: flex
+        flex-direction: column
+        gap: 8px
+        &_recommended
+            background-color: theme.$color-green-aqua
+            border-radius: 6px
+            padding: 3px 8px
+            width: fit-content
+            font-size: 12px 
+            font-weight: 900
+            font-family: theme.$font-primary
+        &_content
+            display: flex
+            align-items: flex-start
+            gap: 16px
+            &_body
+                display: flex
+                flex-direction: column
+                gap: 24px
+                h3
+                    color: theme.$color-purple-black
+                    font-family: theme.$font-primary
+                    font-size: 24px
+                    font-weight: 900
+                    line-height: 32px
+                    letter-spacing: -0.2px
+                    text-align: left
+                &_description
+                    display: flex
+                    flex-direction: column
+                    gap: 4px
+                    p:first-child
+                        color: theme.$color-gray-purple
+                        font-family: theme.$font-primary
+                        font-size: 12px
+                        font-weight: 700
+                        line-height: 16px
+                        letter-spacing: 0.6px
+                        text-align: left
+                        text-transform: uppercase
+                    p:nth-child(2)
+                        color: theme.$color-gray-purple
+                        font-family: theme.$font-primary
+                        font-size: 14px
+                        font-weight: 400
+                        line-height: 20px
+                        letter-spacing: -0.20000000298023224px
+                        text-align: left
+                    
+                    &_discount
+                        text-decoration: line-through
+
+                    p:last-child
+                        color: theme.$color-purple-black
+                        font-family: theme.$font-primary
+                        font-size: 20px
+                        font-weight: 700
+                        line-height: 28px
+                        letter-spacing: -0.2px
+                        text-align: left
+    &_line
+        width: 100%
+        height: 1px
+        background-color: theme.$color-gray-light
+    &_content
+        display: flex
+        flex-direction: column
+        height: 100%
+        justify-content: space-between
+        gap: 40px
+        flex: 1
+        ul
+            display: flex
+            flex-direction: column
+            gap: 24px
+            li
+                color: theme.$color-purple-black
+                font-family: theme.$font-primary
+                font-size: 16px
+                font-weight: 400
+                line-height: 28px
+                letter-spacing: 0.1px
+                text-align: left
+                list-style-type: disc
+       

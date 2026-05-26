@@ -1,8 +1,7 @@
-import { type FC, Fragment, useEffect, useRef, useState } from "react";
-
+import { type FC, Fragment } from "react";
 import { ArrowDownIcon } from "@/presentation/toolbox/assets/icons";
-
 import styles from "./CustomSelect.module.sass";
+import { useCustomSelect } from "./CustomSelect.hook";
 
 interface ISelectOptions {
   label: string;
@@ -24,44 +23,7 @@ export const CustomSelect: FC<ICustomSelectProps> = ({
   onChange,
   variant = "default",
 }) => {
-  const targetRef = useRef<HTMLDivElement>(null);
-
-  const [open, setOpen] = useState<boolean>(false);
-
-  useEffect(() => {
-    const handleClickOutside = (event: MouseEvent) => {
-      if (
-        targetRef.current &&
-        !targetRef.current.contains(event.target as Node)
-      ) {
-        setOpen(false);
-      }
-    };
-
-    const handleEscapeKeyPress = (event: KeyboardEvent) => {
-      if (event.key === "Escape") {
-        setOpen(false);
-      }
-    };
-    document.addEventListener("keydown", handleEscapeKeyPress);
-    document.addEventListener("click", handleClickOutside);
-
-    return () => {
-      document.removeEventListener("keydown", handleEscapeKeyPress);
-      document.removeEventListener("click", handleClickOutside);
-    };
-  }, []);
-
-  useEffect(() => {
-    if (open) {
-      document.body.style.overflow = "hidden";
-    } else {
-      document.body.style.overflow = "auto";
-    }
-    return () => {
-      document.body.style.overflow = "auto";
-    };
-  }, [open]);
+  const { targetRef, open, setOpen } = useCustomSelect();
 
   return (
     <Fragment>

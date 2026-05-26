@@ -1,0 +1,82 @@
+@use '../../toolbox/styles/_theme'
+
+%Sections
+    display: flex
+    flex-direction: column
+    gap: 4px
+    p:first-child
+        color: theme.$color-purple-black
+        font-family: theme.$font-primary
+        font-size: 16px
+        font-weight: 700
+        line-height: 24px
+        letter-spacing: 0.2px
+        text-align: left
+    p
+        color: theme.$color-purple-black
+        font-family: theme.$font-primary
+        font-weight: 400
+        line-height: 24px
+        letter-spacing: 0.1px
+        text-align: left
+
+.summary
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    gap: 40px
+    width: clamp(21rem, 0.342rem + 82.632vi, 40.625rem)
+    margin: 0 auto
+    @media screen and (min-width: theme.$breakpoint-sm)
+        width: 100%
+        margin: 0   
+    h1
+        color: theme.$color-purple-black
+        font-family: theme.$font-primary
+        font-size: clamp(2rem, 1.8462rem + 0.7692vw, 2.5rem)
+        font-weight: 700
+        line-height: clamp(2.5rem, 2.3462rem + 0.7692vw, 3rem)
+        letter-spacing: -0.6px
+        text-align: left
+
+    &_card
+        display: flex
+        flex-direction: column
+        gap: 16px
+        width: 100%
+        &_head
+            display: flex
+            flex-direction: column
+            gap: 8px
+            >p
+                color: theme.$color-purple-black
+                font-family: theme.$font-primary
+                font-size: 10px
+                font-weight: 900
+                line-height: 16px
+                letter-spacing: 0.8px
+                text-align: left
+            div
+                display: flex
+                align-items: center
+                gap: 12px
+                img
+                    width: 24px
+                    height: 24px
+                p
+                    color: theme.$color-purple-black
+                    font-family: theme.$font-primary
+                    font-size: 20px
+                    font-weight: 700
+                    line-height: 28px
+                    letter-spacing: -0.20000000298023224px
+                    text-align: left
+
+        &_line
+            width: 100%
+            background-color: theme.$color-gray-light
+            height: 1px
+        &_payment
+            @extend %Sections
+        &_plan
+            @extend %Sections

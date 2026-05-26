@@ -26,9 +26,6 @@ importers:
       sass:
         specifier: ^1.100.0
         version: 1.100.0
-      vite-plugin-svgr:
-        specifier: ^5.2.0
-        version: 5.2.0(typescript@6.0.3)(vite@8.0.14(@types/node@24.12.4)(sass@1.100.0))
       zustand:
         specifier: ^5.0.13
         version: 5.0.13(@types/react@19.2.15)(react@19.2.6)
@@ -72,6 +69,9 @@ importers:
       vite:
         specifier: ^8.0.12
         version: 8.0.14(@types/node@24.12.4)(sass@1.100.0)
+      vite-plugin-svgr:
+        specifier: ^5.2.0
+        version: 5.2.0(typescript@6.0.3)(vite@8.0.14(@types/node@24.12.4)(sass@1.100.0))
 
 packages:
 

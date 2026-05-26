@@ -1,0 +1,73 @@
+@use '../../../../../toolbox/styles/_theme'
+
+.formulary
+    display: flex
+    flex-direction: column
+    gap: 24px
+    >p
+        color: theme.$color-primary
+        font-family: theme.$font-secondary
+        line-height: 20px
+        letter-spacing: 0.2px
+        text-align: left
+        font-size: 14px
+        font-weight: 600
+        
+    &_form
+        display: flex
+        gap: 16px
+        flex-direction: column
+        
+        &_numberDocument
+            display: flex
+            gap: 8px
+            flex-direction: column
+            label
+                color: theme.$color-primary
+                font-size: 14px
+                font-weight: bold
+                font-family: theme.$font-secondary
+                height: 20px
+                line-height: 20px
+                letter-spacing: 0.2px
+                text-align: left
+            
+            &_input
+                display: grid
+                grid-template-columns: 2fr 3fr
+                border: 1px solid theme.$color-gray-dark
+                align-items: center
+                border-radius: 8px
+                >div:last-child
+                    border-radius: 0px
+                    border-left: 1px solid theme.$color-gray-dark
+    &_policy
+        display: flex
+        flex-direction: column
+        gap: 12px
+        div
+            display: flex
+            align-items: center
+            gap: 12px
+            >div
+                width: 20px
+                height: 20px
+            p
+                color: theme.$color-text
+                line-height: 20px
+                font-family: theme.$font-secondary
+                font-size: 14px
+                font-weight: 400
+                text-align: left
+                @media screen and (min-width: theme.$breakpoint-sm)
+                    font-size: 12px
+                
+        &_terms_Conditions
+            color: theme.$color-primary
+            font-family: theme.$font-secondary
+            font-size: 12px
+            font-weight: 600
+            line-height: 20px
+            text-align: left
+            text-decoration: underline
+

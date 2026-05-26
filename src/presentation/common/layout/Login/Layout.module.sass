@@ -1,4 +1,4 @@
-@import '../../../toolbox/styles/_theme'
+@use '../../../toolbox/styles/_theme'
 
 .layout
     min-height: 100vh
@@ -16,7 +16,7 @@
         height: 100%
         flex: 1
         &_grid
-            max-width: $breakpoint-lg
+            max-width: theme.$breakpoint-lg
             width: 100%
             padding: 0 24px
             margin: 0 auto
@@ -32,12 +32,12 @@
                 grid-column-start: span 4
                 grid-column-end: span 4
                 width: 100%
-                @media screen and (min-width: $breakpoint-sm)
+                @media screen and (min-width: theme.$breakpoint-sm)
                     grid-column-end: span 12
                     grid-column-start: span 12
 
 
-            @media screen and (min-width: $breakpoint-sm)
+            @media screen and (min-width: theme.$breakpoint-sm)
                 gap: 32px
                 grid-column-start: span 12
                 grid-template-columns: repeat(12, minmax(0,1fr))

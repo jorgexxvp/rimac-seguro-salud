@@ -1,4 +1,4 @@
-@import '../../../toolbox/styles/_theme'
+@use '../../../toolbox/styles/_theme'
 
 .button
     &_black
@@ -11,14 +11,14 @@
       font-size: 20px
       line-height: 24px
       height: 64px
-      z-index: $zIndex-1
-      font-family: $font-primary
-      background: $color-primary
+      z-index: theme.$zIndex-1
+      font-family: theme.$font-primary
+      background: theme.$color-primary
       outline: none
       display: flex
       align-items: center
       justify-content: center
-      color: $color-white
+      color: theme.$color-white
       border: none
       text-decoration: none
       border-radius: 40px
@@ -29,16 +29,16 @@
       overflow: hidden
       
       &:hover
-        background-color: $color-white
-        color: $color-primary
-        border: 2px solid $color-primary
+        background-color: theme.$color-white
+        color: theme.$color-primary
+        border: 2px solid theme.$color-primary
 
       &::before
         content: ''
         position: absolute
         width: 0
         height: 0
-        background-color: $color-white
+        background-color: theme.$color-white
         border-radius: 50%
         top: 50%
         left: 50%
@@ -47,22 +47,22 @@
         z-index: -1
 
       &:hover::before
-        width: 250px
-        height: 250px
+        width: 195px
+        height: 195px
         
-      @media screen and (min-width: $breakpoint-sm)
-        width: 250px
+      @media screen and (min-width: theme.$breakpoint-sm)
+        width: 195px
         &:hover::before
-          width: 250px
-          height: 250px
+          width: 195px
+          height: 195px
     &_red
       border-radius: 32px
       border: none
-      background-color: $color-red
+      background-color: theme.$color-red
       width: 100%
       padding: 14px 0
-      color: $color-white
-      font-family: $font-primary
+      color: theme.$color-white
+      font-family: theme.$font-primary
       font-size: 18px
       font-weight: 700
       line-height: 20px

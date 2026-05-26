@@ -1,11 +1,8 @@
 import {
   createBrowserRouter,
   createRoutesFromElements,
-  Navigate,
-  Outlet,
   Route,
-} from "react-router-dom";
-
+} from "react-router";
 import { Layout as LayoutGeneral } from "../common/layout/Login";
 import { Layout } from "../common/layout/Portal";
 import {
@@ -19,16 +16,15 @@ import { Login, Portal, Summary } from "../views";
 
 export const allRoutes = createBrowserRouter(
   createRoutesFromElements(
-    <Route
-      path={ROUTE_LOGIN}
-      element={
-        <LayoutGeneral>
-          <Outlet />
-        </LayoutGeneral>
-      }
-      errorElement={<Navigate to={ROUTE_LOGIN} />}
-    >
-      <Route index element={<Login />} />
+    <Route>
+      <Route
+        index
+        element={
+          <LayoutGeneral>
+            <Login />
+          </LayoutGeneral>
+        }
+      />
       <Route
         path={ROUTE_PORTAL}
         element={

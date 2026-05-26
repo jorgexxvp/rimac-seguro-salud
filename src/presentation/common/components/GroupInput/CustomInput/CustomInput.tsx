@@ -10,6 +10,7 @@ interface ICustomInputProps<T> {
   onBlur?: (value: T) => void;
   placeholder?: string;
   variant?: EVariantGeneral;
+  label?: string;
 }
 
 export const CustomInput: FC<ICustomInputProps<ReactNode>> = ({
@@ -18,14 +19,18 @@ export const CustomInput: FC<ICustomInputProps<ReactNode>> = ({
   onBlur,
   placeholder,
   variant,
+  label,
 }) => {
   return (
-    <input
-      className={`${styles["e-placeholder"]} ${styles.input} ${variant === "outline" && styles.input_outline}`}
-      onChange={(e) => onChange(e.target.value)}
-      onBlur={(e) => onBlur?.(e.target.value)}
-      value={value}
-      placeholder={placeholder}
-    />
+    <div className={styles.custom_input}>
+      {label && <label>{label}</label>}
+      <input
+        className={`${styles["e-placeholder"]} ${styles.input} ${variant === "outline" && styles.input_outline}`}
+        onChange={(e) => onChange(e.target.value)}
+        onBlur={(e) => onBlur?.(e.target.value)}
+        value={value}
+        placeholder={placeholder}
+      />
+    </div>
   );
 };

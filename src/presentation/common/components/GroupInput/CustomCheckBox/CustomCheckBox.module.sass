@@ -1,20 +1,20 @@
-@import '../../../../toolbox/styles/_theme'
+@use '../../../../toolbox/styles/_theme'
 
 .checkbox
     &_default
         width: 100%
         border-radius: 4px
-        border: 1px solid $color-gray-semi-dark
+        border: 1px solid theme.$color-gray-semi-dark
         cursor: pointer
         display: flex
         align-items: center
         justify-content: center
         transition: all 300ms ease-in-out
         &_icon
-            stroke: $color-gray-semi-dark
+            stroke: theme.$color-gray-semi-dark
         &_selected
-            border: 1px solid $color-text
-            background-color: $color-text
+            border: 1px solid theme.$color-text
+            background-color: theme.$color-text
         &_icon
             stroke: transparent
 
@@ -23,16 +23,16 @@
         width: 100%
         height: 100%
         border-radius: 50%
-        border: 1px solid $color-gray-semi-dark
+        border: 1px solid theme.$color-gray-semi-dark
         cursor: pointer
         display: flex
         align-items: center
         justify-content: center
         transition: all 300ms ease-in-out
         &_icon
-            stroke: $color-gray-semi-dark
+            stroke: theme.$color-gray-semi-dark
         &_selected
-            border: 1px solid $color-green
-            background-color: $color-green
+            border: 1px solid theme.$color-green
+            background-color: theme.$color-green
         &_icon
             stroke: transparent
