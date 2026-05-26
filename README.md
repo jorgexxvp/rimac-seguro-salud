@@ -8,6 +8,48 @@
 - **pnpm** 8+ ([Instalar pnpm](https://pnpm.io/installation))
 - **Git**
 
+
+## 🚀 Instalación y Ejecución
+
+Sigue estos sencillos pasos para clonar el repositorio, instalar las dependencias y levantar el proyecto en tu entorno local.
+
+1. **Clonar el repositorio**
+   Abre tu terminal y descarga el proyecto con el siguiente comando:
+   git clone https://github.com/jorgexxvp/rimac-seguro-salud
+
+2. **Acceder al directorio del proyecto**
+   Muévete a la carpeta raíz del proyecto:
+   cd rimac-seguro-salud
+
+3. **Instalar las dependencias**
+   Instala todos los módulos necesarios ejecutando el comando:
+   pnpm install
+
+4. **Levantar el servidor de desarrollo**
+   Para encender el entorno local con Vite, ejecuta el comando:
+   pnpm run dev
+
+   La terminal te mostrará un enlace local (usualmente http://localhost:5173). Abre esa dirección en tu navegador para interactuar con la aplicación.
+
+5. **Compilar para producción (Build)**
+   Si necesitas generar los archivos optimizados listos para producción, ejecuta el comando:
+   pnpm run build
+
+---
+
+## 🧪 Pruebas Unitarias (Testing)
+
+Este proyecto cuenta con pruebas unitarias utilizando **Vitest** y **React Testing Library**.
+
+* **Ejecutar los tests en modo interactivo (Watch mode):**
+  pnpm run test
+  
+* **Generar el reporte de cobertura de código (Coverage):**
+  pnpm run test:coverage
+
+---
+
+
 ## 🛠️ Tech Stack
 
 | Tecnología | Versión | Propósito |

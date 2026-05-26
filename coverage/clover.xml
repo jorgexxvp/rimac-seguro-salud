@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1779775758533" clover="3.2.0">
+  <project timestamp="1779775758533" name="All files">
+    <metrics statements="35" coveredstatements="34" conditionals="39" coveredconditionals="37" methods="19" coveredmethods="18" elements="93" coveredelements="89" complexity="0" loc="35" ncloc="35" packages="7" files="14" classes="14"/>
+    <package name="CustomButton">
+      <metrics statements="2" coveredstatements="2" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
+      <file name="CustomButton.module.sass" path="F:\Propios\rimac-seguro-salud\src\presentation\common\components\CustomButton\CustomButton.module.sass">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="CustomButton.tsx" path="F:\Propios\rimac-seguro-salud\src\presentation\common\components\CustomButton\CustomButton.tsx">
+        <metrics statements="2" coveredstatements="2" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="18" count="5" type="stmt"/>
+      </file>
+    </package>
+    <package name="GroupInput.CustomCheckBox">
+      <metrics statements="2" coveredstatements="2" conditionals="5" coveredconditionals="5" methods="1" coveredmethods="1"/>
+      <file name="CustomCheckBox.module.sass" path="F:\Propios\rimac-seguro-salud\src\presentation\common\components\GroupInput\CustomCheckBox\CustomCheckBox.module.sass">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="CustomCheckBox.tsx" path="F:\Propios\rimac-seguro-salud\src\presentation\common\components\GroupInput\CustomCheckBox\CustomCheckBox.tsx">
+        <metrics statements="2" coveredstatements="2" conditionals="5" coveredconditionals="5" methods="1" coveredmethods="1"/>
+        <line num="13" count="1" type="stmt"/>
+        <line num="18" count="4" type="stmt"/>
+      </file>
+    </package>
+    <package name="GroupInput.CustomInput">
+      <metrics statements="4" coveredstatements="4" conditionals="4" coveredconditionals="4" methods="3" coveredmethods="3"/>
+      <file name="CustomInput.module.sass" path="F:\Propios\rimac-seguro-salud\src\presentation\common\components\GroupInput\CustomInput\CustomInput.module.sass">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="CustomInput.tsx" path="F:\Propios\rimac-seguro-salud\src\presentation\common\components\GroupInput\CustomInput\CustomInput.tsx">
+        <metrics statements="4" coveredstatements="4" conditionals="4" coveredconditionals="4" methods="3" coveredmethods="3"/>
+        <line num="16" count="1" type="stmt"/>
+        <line num="24" count="7" type="stmt"/>
+        <line num="29" count="1" type="stmt"/>
+        <line num="30" count="2" type="stmt"/>
+      </file>
+    </package>
+    <package name="GroupInput.CustomSelect">
+      <metrics statements="6" coveredstatements="5" conditionals="7" coveredconditionals="7" methods="5" coveredmethods="4"/>
+      <file name="CustomSelect.module.sass" path="F:\Propios\rimac-seguro-salud\src\presentation\common\components\GroupInput\CustomSelect\CustomSelect.module.sass">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="CustomSelect.tsx" path="F:\Propios\rimac-seguro-salud\src\presentation\common\components\GroupInput\CustomSelect\CustomSelect.tsx">
+        <metrics statements="6" coveredstatements="5" conditionals="7" coveredconditionals="7" methods="5" coveredmethods="4"/>
+        <line num="20" count="1" type="stmt"/>
+        <line num="26" count="4" type="stmt"/>
+        <line num="28" count="4" type="stmt"/>
+        <line num="33" count="2" type="stmt"/>
+        <line num="44" count="8" type="stmt"/>
+        <line num="47" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="Header">
+      <metrics statements="3" coveredstatements="3" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
+      <file name="Header.module.sass" path="F:\Propios\rimac-seguro-salud\src\presentation\common\components\Header\Header.module.sass">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="Header.tsx" path="F:\Propios\rimac-seguro-salud\src\presentation\common\components\Header\Header.tsx">
+        <metrics statements="3" coveredstatements="3" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="10" count="4" type="stmt"/>
+        <line num="12" count="4" type="stmt"/>
+      </file>
+    </package>
+    <package name="Slider">
+      <metrics statements="10" coveredstatements="10" conditionals="17" coveredconditionals="15" methods="4" coveredmethods="4"/>
+      <file name="Slider.module.sass" path="F:\Propios\rimac-seguro-salud\src\presentation\common\components\Slider\Slider.module.sass">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="Slider.tsx" path="F:\Propios\rimac-seguro-salud\src\presentation\common\components\Slider\Slider.tsx">
+        <metrics statements="10" coveredstatements="10" conditionals="17" coveredconditionals="15" methods="4" coveredmethods="4"/>
+        <line num="18" count="1" type="stmt"/>
+        <line num="20" count="15" type="stmt"/>
+        <line num="22" count="15" type="stmt"/>
+        <line num="24" count="15" type="cond" truecount="1" falsecount="1"/>
+        <line num="30" count="15" type="stmt"/>
+        <line num="31" count="7" type="cond" truecount="2" falsecount="0"/>
+        <line num="34" count="15" type="stmt"/>
+        <line num="35" count="2" type="cond" truecount="2" falsecount="0"/>
+        <line num="38" count="15" type="stmt"/>
+        <line num="43" count="16" type="cond" truecount="1" falsecount="1"/>
+      </file>
+    </package>
+    <package name="Stepper">
+      <metrics statements="8" coveredstatements="8" conditionals="2" coveredconditionals="2" methods="4" coveredmethods="4"/>
+      <file name="Stepper.module.sass" path="F:\Propios\rimac-seguro-salud\src\presentation\common\components\Stepper\Stepper.module.sass">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="Stepper.tsx" path="F:\Propios\rimac-seguro-salud\src\presentation\common\components\Stepper\Stepper.tsx">
+        <metrics statements="8" coveredstatements="8" conditionals="2" coveredconditionals="2" methods="4" coveredmethods="4"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="13" count="6" type="stmt"/>
+        <line num="15" count="6" type="stmt"/>
+        <line num="17" count="6" type="stmt"/>
+        <line num="18" count="4" type="stmt"/>
+        <line num="19" count="2" type="stmt"/>
+        <line num="23" count="6" type="stmt"/>
+        <line num="28" count="1" type="stmt"/>
+      </file>
+    </package>
+  </project>
+</coverage>
