@@ -72,9 +72,9 @@ describe("Slider - Vitest", () => {
     const nextButton = screen.getByText("1/3").nextSibling as HTMLElement;
 
     // Hacemos click múltiples veces para intentar desbordar el estado
-    fireEvent.click(nextButton); // Cambia al index 1 (Slide 2)
-    fireEvent.click(nextButton); // Cambia al index 2 (Slide 3)
-    fireEvent.click(nextButton); // Intento de click extra cuando ya está en el límite
+    fireEvent.click(nextButton);
+    fireEvent.click(nextButton);
+    fireEvent.click(nextButton);
 
     // Se debe quedar estancado en el último slide sin romper la app
     expect(screen.getByText("3/3")).toBeInTheDocument();
